@@ -586,7 +586,7 @@ To run :func:`verde.cross_val_score` with Dask, use the ``delayed`` argument:
 
  .. code-block:: none
 
-    Delayed k-fold scores: [Delayed('fit_score-4b980532-e70e-4e09-a75d-e8b8412ead78'), Delayed('fit_score-780e0934-748f-4c4d-8175-1f152ced15ed'), Delayed('fit_score-5455e33e-3ff2-46ed-8d95-c40784bbc05c'), Delayed('fit_score-63fea6f3-eb18-435f-86d2-0a81ef1eb548'), Delayed('fit_score-24759ffb-d290-4745-9331-9244f1a19c4b')]
+    Delayed k-fold scores: [Delayed('fit_score-15f69163-a18c-4fe8-9fbb-628cf22ec27f'), Delayed('fit_score-0d7ba2a7-e4bc-4179-a5b1-7761f9eeac8f'), Delayed('fit_score-1311283f-56c7-4bb5-a99b-d5deb648b1bc'), Delayed('fit_score-dda5a9b9-f800-458e-ada1-9e523117c882'), Delayed('fit_score-b4cca73b-3eb1-417d-ba46-e9b1e3ee5fe6')]
 
 
 
@@ -615,7 +615,7 @@ are interested only in the mean score, we can schedule the mean as well using
 
  .. code-block:: none
 
-    Delayed mean: Delayed('mean-b560933f-3e72-4aaa-922f-dd3672903351')
+    Delayed mean: Delayed('mean-9aff7d43-781b-4fb7-be55-f33b578a3020')
 
 
 
@@ -664,7 +664,7 @@ that.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.593 seconds)
+   **Total running time of the script:** ( 0 minutes  0.613 seconds)
 
 
 .. _sphx_glr_download_tutorials_model_evaluation.py:

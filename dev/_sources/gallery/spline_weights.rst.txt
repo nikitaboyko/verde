@@ -35,6 +35,12 @@ and use weights based on the data uncertainty during gridding.
                  ('spline',
                   Spline(damping=1e-10, engine='auto', force_coords=None,
                          mindist=1e-05))])
+    /home/travis/miniconda/envs/testing/lib/python3.6/site-packages/verde/blockreduce.py:449: RuntimeWarning: divide by zero encountered in double_scalars
+      {"weight{}".format(i): lambda x: 1 / x.sum() for i in range(ncomps)}
+    /home/travis/miniconda/envs/testing/lib/python3.6/site-packages/numpy/lib/function_base.py:393: RuntimeWarning: Mean of empty slice.
+      avg = a.mean(axis)
+    /home/travis/miniconda/envs/testing/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+      ret = ret.dtype.type(ret / rcount)
 
     Score: 0.819
     /home/travis/build/fatiando/verde/examples/spline_weights.py:110: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all axes decorations. 
@@ -155,7 +161,7 @@ and use weights based on the data uncertainty during gridding.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  1.375 seconds)
+   **Total running time of the script:** ( 0 minutes  1.477 seconds)
 
 
 .. _sphx_glr_download_gallery_spline_weights.py:

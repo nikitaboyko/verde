@@ -38,7 +38,7 @@ the interpolation is usually a bit slower. However, the advantage of using
     Chain(steps=[('mean',
                   BlockReduce(adjust='spacing', center_coordinates=False,
                               drop_coords=True,
-                              reduction=<function mean at 0x7f2925ae4e18>,
+                              reduction=<function mean at 0x7f69f1884e18>,
                               region=None, shape=None, spacing=27750.0)),
                  ('spline',
                   Spline(damping=1e-10, engine='auto', force_coords=None,
@@ -142,7 +142,7 @@ the interpolation is usually a bit slower. However, the advantage of using
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.574 seconds)
+   **Total running time of the script:** ( 0 minutes  0.781 seconds)
 
 
 .. _sphx_glr_download_gallery_spline.py:

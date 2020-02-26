@@ -420,10 +420,10 @@ intermediate values in the scheduled computations.</p>
 </pre></div>
 </div>
 <p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Delayed scores: [Delayed(&#39;mean-9b750d83-2508-4324-aa53-c30be1c58bb6&#39;), Delayed(&#39;mean-de79e76c-c347-4335-a27d-f600aeba8289&#39;), Delayed(&#39;mean-925901d7-179d-4d53-bd35-b96946b71429&#39;), Delayed(&#39;mean-447a023e-7dd8-40df-af72-45dc53eb1f39&#39;), Delayed(&#39;mean-a584c572-1cd1-4a36-8998-d20152cad684&#39;), Delayed(&#39;mean-5557a60b-12a3-4528-8a25-fd233a06ab7e&#39;), Delayed(&#39;mean-4276a766-1925-4026-8de1-192c616dce88&#39;), Delayed(&#39;mean-62410594-f53e-40e1-a3ff-83c91ed3242c&#39;), Delayed(&#39;mean-3e8171fd-69a9-4fa7-a919-d112e763dcc4&#39;), Delayed(&#39;mean-044ef77b-275c-4577-9103-327c724888d6&#39;), Delayed(&#39;mean-e6f73eb2-a190-4197-a4e8-9d613c620af8&#39;), Delayed(&#39;mean-1d0d3529-b720-46f7-a124-a275062f244b&#39;), Delayed(&#39;mean-ce84a3a8-552d-41ce-88cd-d55534f17eca&#39;), Delayed(&#39;mean-3c8be123-126b-4a1d-aa69-d6e5980594ec&#39;), Delayed(&#39;mean-f51b7356-28fe-4a78-89ee-ed4257751dfa&#39;), Delayed(&#39;mean-f19d5eef-6c8d-4953-a2fa-e657ed9dc64b&#39;)]
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>Delayed scores: [Delayed(&#39;mean-80f19e22-d58f-49e5-93cb-000836904f67&#39;), Delayed(&#39;mean-6cccf077-36a4-43e5-b6b4-595045d67265&#39;), Delayed(&#39;mean-0e700edd-b221-4fe0-9258-100868c29307&#39;), Delayed(&#39;mean-459c544f-2ac8-43eb-823f-6ad72c0bb832&#39;), Delayed(&#39;mean-908ab90c-45d7-4f1c-bd5a-348550706c97&#39;), Delayed(&#39;mean-ac64d899-49db-40b6-a036-c4dc8aeb97bd&#39;), Delayed(&#39;mean-01ab50cf-79a0-4b39-9e3d-9ffeb3d7e6bd&#39;), Delayed(&#39;mean-6c153763-527d-4fe1-ae34-367370b06c53&#39;), Delayed(&#39;mean-ff19032a-11c8-4ac3-915b-373a863254fe&#39;), Delayed(&#39;mean-4c3634d7-51ce-406a-a395-9fcd9870e6bf&#39;), Delayed(&#39;mean-6378d205-3d7b-47e3-825e-c67ca54fec07&#39;), Delayed(&#39;mean-94422c89-ea47-46fc-9a4a-d95df850e1a9&#39;), Delayed(&#39;mean-c04f27f1-6bba-4c07-9155-297f33de9f02&#39;), Delayed(&#39;mean-6025b83a-fe04-414f-b246-8ee385626d4b&#39;), Delayed(&#39;mean-f15a6dbb-ab8b-4094-815e-f71feaa3a48a&#39;), Delayed(&#39;mean-62a1c7a5-bcd1-44cd-a4d6-0161f159e9c2&#39;)]
 </pre></div>
 </div>
-<p>Calling <a class="reference external" href="https://docs.dask.org/en/latest/api.html#dask.compute" title="(in Dask v2.9.2)"><code class="xref py py-func docutils literal notranslate"><span class="pre">dask.compute</span></code></a> on the scores will calculate their values but
+<p>Calling <a class="reference external" href="https://docs.dask.org/en/latest/api.html#dask.compute" title="(in Dask v2.11.0+8.g33ad832d)"><code class="xref py py-func docutils literal notranslate"><span class="pre">dask.compute</span></code></a> on the scores will calculate their values but
 will unfortunately run the entire grid search again. So using
 <code class="docutils literal notranslate"><span class="pre">delayed=True</span></code> is not recommended if you need the scores of each parameter
 combination.</p>
@@ -483,7 +483,7 @@ with the best configuration and see how it compares to the default result.</p>
 <p>Notice that, for sparse data like these, <strong>smoother models tend to be better
 predictors</strong>. This is a sign that you should probably not trust many of the short
 wavelength features that we get from the defaults.</p>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  2.673 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  2.957 seconds)</p>
 <div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-tutorials-model-selection-py">
 <div class="sphx-glr-download docutils container">
 <p><a class="reference download internal" download="" href="../_downloads/ca478a03d934b25a6d83ce3f68e77691/model_selection.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">model_selection.py</span></code></a></p>
@@ -518,7 +518,7 @@ wavelength features that we get from the defaults.</p>
     <p>
         &copy; Copyright 2017-2020, The Verde Developers
       <span class="lastupdated">
-        Last updated on Jan 22, 2020.
+        Last updated on Feb 26, 2020.
       </span>
 
     </p>

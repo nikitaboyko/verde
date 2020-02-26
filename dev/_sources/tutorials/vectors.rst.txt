@@ -109,6 +109,12 @@ components.
 
  .. code-block:: none
 
+    /home/travis/miniconda/envs/testing/lib/python3.6/site-packages/verde/blockreduce.py:449: RuntimeWarning: divide by zero encountered in double_scalars
+      {"weight{}".format(i): lambda x: 1 / x.sum() for i in range(ncomps)}
+    /home/travis/miniconda/envs/testing/lib/python3.6/site-packages/numpy/lib/function_base.py:393: RuntimeWarning: Mean of empty slice.
+      avg = a.mean(axis)
+    /home/travis/miniconda/envs/testing/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+      ret = ret.dtype.type(ret / rcount)
     2 2
 
 
@@ -493,6 +499,12 @@ Fitting the spline and gridding is exactly the same as what we've done before.
 
  .. code-block:: none
 
+    /home/travis/miniconda/envs/testing/lib/python3.6/site-packages/verde/blockreduce.py:449: RuntimeWarning: divide by zero encountered in double_scalars
+      {"weight{}".format(i): lambda x: 1 / x.sum() for i in range(ncomps)}
+    /home/travis/miniconda/envs/testing/lib/python3.6/site-packages/numpy/lib/function_base.py:393: RuntimeWarning: Mean of empty slice.
+      avg = a.mean(axis)
+    /home/travis/miniconda/envs/testing/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+      ret = ret.dtype.type(ret / rcount)
     0.9926765828507806
     <xarray.Dataset>
     Dimensions:          (latitude: 49, longitude: 47)
@@ -580,7 +592,7 @@ Green's functions.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  2.244 seconds)
+   **Total running time of the script:** ( 0 minutes  2.450 seconds)
 
 
 .. _sphx_glr_download_tutorials_vectors.py:

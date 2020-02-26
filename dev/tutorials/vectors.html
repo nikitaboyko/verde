@@ -310,7 +310,13 @@ components.</p>
 </pre></div>
 </div>
 <p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>2 2
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/home/travis/miniconda/envs/testing/lib/python3.6/site-packages/verde/blockreduce.py:449: RuntimeWarning: divide by zero encountered in double_scalars
+  {&quot;weight{}&quot;.format(i): lambda x: 1 / x.sum() for i in range(ncomps)}
+/home/travis/miniconda/envs/testing/lib/python3.6/site-packages/numpy/lib/function_base.py:393: RuntimeWarning: Mean of empty slice.
+  avg = a.mean(axis)
+/home/travis/miniconda/envs/testing/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+2 2
 </pre></div>
 </div>
 <p>We can convert the blocked coordinates back to longitude and latitude to plot with
@@ -540,7 +546,13 @@ problems when trying to fit it to different components.</p>
 </pre></div>
 </div>
 <p class="sphx-glr-script-out">Out:</p>
-<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>0.9926765828507806
+<div class="sphx-glr-script-out highlight-none notranslate"><div class="highlight"><pre><span></span>/home/travis/miniconda/envs/testing/lib/python3.6/site-packages/verde/blockreduce.py:449: RuntimeWarning: divide by zero encountered in double_scalars
+  {&quot;weight{}&quot;.format(i): lambda x: 1 / x.sum() for i in range(ncomps)}
+/home/travis/miniconda/envs/testing/lib/python3.6/site-packages/numpy/lib/function_base.py:393: RuntimeWarning: Mean of empty slice.
+  avg = a.mean(axis)
+/home/travis/miniconda/envs/testing/lib/python3.6/site-packages/numpy/core/_methods.py:161: RuntimeWarning: invalid value encountered in double_scalars
+  ret = ret.dtype.type(ret / rcount)
+0.9926765828507806
 &lt;xarray.Dataset&gt;
 Dimensions:          (latitude: 49, longitude: 47)
 Coordinates:
@@ -602,7 +614,7 @@ Green’s functions.</p>
 coupled Green’s function but it is deprecated and will be removed in
 Verde v2.0.0. Please use the implementation in the <a class="reference external" href="https://github.com/fatiando/erizo">Erizo</a> package instead.</p>
 </div>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  2.244 seconds)</p>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  2.450 seconds)</p>
 <div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-tutorials-vectors-py">
 <div class="sphx-glr-download docutils container">
 <p><a class="reference download internal" download="" href="../_downloads/c156953e5af94c539aaf3d04db82f05f/vectors.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">vectors.py</span></code></a></p>
@@ -638,7 +650,7 @@ Verde v2.0.0. Please use the implementation in the <a class="reference external"
     <p>
         &copy; Copyright 2017-2020, The Verde Developers
       <span class="lastupdated">
-        Last updated on Jan 22, 2020.
+        Last updated on Feb 26, 2020.
       </span>
 
     </p>
